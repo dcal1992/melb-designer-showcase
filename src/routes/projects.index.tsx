@@ -58,7 +58,7 @@ function ProjectCard({ project }: { project: Project }) {
       params={{ slug: project.slug }}
       className="project-card group relative block"
     >
-      <div className="overflow-hidden rounded-sm bg-secondary">
+      <div className="relative overflow-hidden rounded-sm bg-secondary">
         <img
           src={project.cover}
           alt={project.title}
@@ -67,21 +67,29 @@ function ProjectCard({ project }: { project: Project }) {
           loading="lazy"
           className="card-image aspect-[4/5] w-full object-cover"
         />
+        {/* Hover overlay — reveals project name + category over the image */}
+        <div className="reveal-overlay absolute inset-0 flex items-end bg-gradient-to-t from-black/55 via-black/10 to-transparent">
+          <div className="reveal-content p-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/70">
+              {project.category}
+            </p>
+            <h3 className="mt-1.5 font-sans text-lg font-medium text-white">
+              {project.title}
+            </h3>
+            <span className="mt-3 inline-block font-mono text-[10px] uppercase tracking-[0.2em] text-white/80">
+              View project →
+            </span>
+          </div>
+        </div>
       </div>
-      <div className="relative mt-5 overflow-hidden">
-        <div className="reveal-name">
-          <h3 className="font-sans text-base font-medium text-foreground">
-            {project.title}
-          </h3>
-          <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
-            {project.category} / {project.year}
-          </p>
-        </div>
-        <div className="reveal-view absolute inset-x-0 top-0">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
-            View project →
-          </span>
-        </div>
+      {/* Default caption beneath the image, fades on hover */}
+      <div className="card-caption mt-5">
+        <h3 className="font-sans text-base font-medium text-foreground">
+          {project.title}
+        </h3>
+        <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+          {project.category} / {project.year}
+        </p>
       </div>
     </Link>
   );
