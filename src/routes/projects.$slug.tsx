@@ -29,7 +29,7 @@ export const Route = createFileRoute("/projects/$slug")({
       ],
     };
   },
-  loader: async ({ params }) => {
+  loader: ({ params }): { project: Project } => {
     const project = getProject(params.slug);
     if (!project) throw notFound();
     return { project };
