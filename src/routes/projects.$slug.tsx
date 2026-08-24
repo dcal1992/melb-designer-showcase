@@ -39,7 +39,7 @@ export const Route = createFileRoute("/projects/$slug")({
 function ProjectDetail() {
   const { project } = Route.useLoaderData();
   const currentIndex = projects.findIndex((p) => p.slug === project.slug);
-  const nextProject = projects[(currentIndex + 1) % projects.length];
+  const nextProject = projects[(currentIndex + 1) % projects.length]!;
 
   return (
     <div className="px-6 py-16 md:px-12 md:py-20">
