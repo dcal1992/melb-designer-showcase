@@ -1,6 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { getProject, projects } from "@/lib/projects";
-import { notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { getProject, projects, type Project } from "@/lib/projects";
 
 export const Route = createFileRoute("/projects/$slug")({
   head: ({ params }) => {
