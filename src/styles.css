@@ -135,24 +135,35 @@
   animation: fade-in 0.8s ease both;
 }
 
-/* Project card hover reveal */
-.project-card .reveal-name {
-  transform: translateY(0);
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.project-card:hover .reveal-name {
-  transform: translateY(-130%);
-}
-.project-card .reveal-view {
-  transform: translateY(130%);
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.project-card:hover .reveal-view {
-  transform: translateY(0);
-}
+/* Project card hover reveal — name + category slide up over the image */
 .project-card .card-image {
-  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
 }
 .project-card:hover .card-image {
-  transform: scale(1.03);
+  transform: scale(1.04);
+  filter: brightness(0.7);
+}
+
+.project-card .reveal-overlay {
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.project-card:hover .reveal-overlay {
+  opacity: 1;
+}
+
+.project-card .reveal-content {
+  transform: translateY(14px);
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.project-card:hover .reveal-content {
+  transform: translateY(0);
+}
+
+/* Always-visible caption beneath the image */
+.project-card .card-caption {
+  transition: opacity 0.4s ease;
+}
+.project-card:hover .card-caption {
+  opacity: 0;
 }
