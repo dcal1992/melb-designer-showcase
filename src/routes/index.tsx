@@ -4,13 +4,13 @@ import { projects } from "@/lib/projects";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Damian Calello. — Senior Graphic Designer, Melbourne" },
+      { title: "Damian Calello — Senior Graphic Designer, Melbourne" },
       {
         name: "description",
         content:
           "Senior graphic designer in Melbourne creating quietly impactful visual systems — branding, logo design, packaging, and website design.",
       },
-      { property: "og:title", content: "Damian Calello. — Senior Graphic Designer, Melbourne" },
+      { property: "og:title", content: "Damian Calello — Senior Graphic Designer, Melbourne" },
       {
         property: "og:description",
         content:

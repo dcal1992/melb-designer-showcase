@@ -4,13 +4,13 @@ import aboutPortrait from "@/assets/about-portrait.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Damian Calello." },
+      { title: "About — Damian Calello" },
       {
         name: "description",
         content:
           "Damian Calello is a senior graphic designer in Melbourne with a decade of experience turning brand strategy into identities that hold their shape — branding, logo design, and editorial systems.",
       },
-      { property: "og:title", content: "About — Damian Calello." },
+      { property: "og:title", content: "About — Damian Calello" },
       {
         property: "og:description",
         content:
@@ -49,7 +49,7 @@ const services = [
 const timeline = [
   { year: "2013", event: "Began independent practice in Melbourne" },
   { year: "2016", event: "Identity lead for a national cultural institution" },
-  { year: "2020", event: "Founded Damian Calello. studio" },
+  { year: "2020", event: "Founded Damian Calello studio" },
   { year: "2024", event: "AGDA finalist, Identity of the Year" },
 ];
 

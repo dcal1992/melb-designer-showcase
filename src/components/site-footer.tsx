@@ -45,7 +45,7 @@ export function SiteFooter() {
             </a>
           </div>
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground/60">
-            © {new Date().getFullYear()} Damian Calello. — Melbourne, AU
+            © {new Date().getFullYear()} Damian Calello — Melbourne, AU
           </p>
         </div>
       </div>

@@ -4,17 +4,17 @@ import { useState } from "react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Damian Calello." },
+      { title: "Contact — Damian Calello" },
       {
         name: "description",
         content:
-          "Start a project with Damian Calello. — a senior graphic designer in Melbourne available for branding, logo design, packaging, and website design commissions.",
+          "Start a project with Damian Calello — a senior graphic designer in Melbourne available for branding, logo design, packaging, and website design commissions.",
       },
-      { property: "og:title", content: "Contact — Damian Calello." },
+      { property: "og:title", content: "Contact — Damian Calello" },
       {
         property: "og:description",
         content:
-          "Start a project with Damian Calello. — branding, logo design, packaging, and website design commissions.",
+          "Start a project with Damian Calello — branding, logo design, packaging, and website design commissions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
