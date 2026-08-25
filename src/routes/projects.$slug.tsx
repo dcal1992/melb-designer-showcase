@@ -126,19 +126,41 @@ function ProjectDetail() {
             <p className="max-w-2xl font-sans text-lg font-light leading-relaxed text-foreground md:text-xl">
               {project.description}
             </p>
-
-            <div className="mt-10 overflow-hidden rounded-sm bg-secondary">
-              <img
-                src={project.detail}
-                alt={`${project.title} — detail`}
-                width={1024}
-                height={1024}
-                loading="lazy"
-                className="aspect-square w-full object-cover"
-              />
-            </div>
           </div>
         </div>
+
+        {/* Gallery — up to four supporting images */}
+        <section className="mt-20">
+          <p className="mb-8 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+            Selected imagery
+          </p>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2">
+            {project.gallery.slice(0, 4).map((image, index) => (
+              <figure key={image.src} className={index === 0 ? "sm:col-span-2" : ""}>
+                <div className="overflow-hidden rounded-sm bg-secondary">
+                  <img
+                    src={image.src}
+                    alt={`${project.title} — ${image.caption}`}
+                    width={image.width}
+                    height={image.height}
+                    loading="lazy"
+                    className={`w-full object-cover ${
+                      index === 0
+                        ? "aspect-[16/9]"
+                        : image.height > image.width
+                          ? "aspect-[4/5]"
+                          : "aspect-[4/3]"
+                    }`}
+                  />
+                </div>
+                <figcaption className="mt-3 font-mono text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+                  {image.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
 
         {/* Next project */}
         <div className="mt-24 border-t border-border pt-12">
