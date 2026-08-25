@@ -91,13 +91,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Archer & Co. — Senior Graphic Designer, Melbourne" },
+      { title: "Damian Calello — Senior Graphic Designer, Melbourne" },
       {
         name: "description",
         content:
-          "Archer & Co. is the independent practice of a senior graphic designer in Melbourne, creating editorial-led brand identities, logo systems, and website design for cultural institutions and craft brands.",
+          "Damian Calello is the independent practice of a senior graphic designer in Melbourne, creating editorial-led brand identities, logo systems, and website design for cultural institutions and craft brands.",
       },
-      { property: "og:title", content: "Archer & Co. — Senior Graphic Designer, Melbourne" },
+      { property: "og:title", content: "Damian Calello — Senior Graphic Designer, Melbourne" },
       {
         property: "og:description",
         content:

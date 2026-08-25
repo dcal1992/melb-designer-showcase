@@ -4,13 +4,13 @@ import aboutPortrait from "@/assets/about-portrait.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Archer & Co." },
+      { title: "About — Damian Calello" },
       {
         name: "description",
         content:
-          "Archer is a senior graphic designer in Melbourne with a decade of experience turning brand strategy into identities that hold their shape — branding, logo design, and editorial systems.",
+          "Damian Calello is a senior graphic designer in Melbourne with a decade of experience turning brand strategy into identities that hold their shape — branding, logo design, and editorial systems.",
       },
-      { property: "og:title", content: "About — Archer & Co." },
+      { property: "og:title", content: "About — Damian Calello" },
       {
         property: "og:description",
         content:
@@ -49,7 +49,7 @@ const services = [
 const timeline = [
   { year: "2013", event: "Began independent practice in Melbourne" },
   { year: "2016", event: "Identity lead for a national cultural institution" },
-  { year: "2020", event: "Founded Archer & Co. studio" },
+  { year: "2020", event: "Founded Damian Calello studio" },
   { year: "2024", event: "AGDA finalist, Identity of the Year" },
 ];
 
@@ -66,7 +66,7 @@ function AboutPage() {
             <div className="mt-8 overflow-hidden rounded-sm bg-secondary">
               <img
                 src={aboutPortrait}
-                alt="Archer, senior graphic designer, in the Melbourne studio"
+                alt="Damian Calello, senior graphic designer, in the Melbourne studio"
                 width={1024}
                 height={1280}
                 loading="lazy"
@@ -81,7 +81,7 @@ function AboutPage() {
             </h1>
             <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm Archer — a senior graphic designer working independently from
+                I'm Damian Calello — a senior graphic designer working independently from
                 a studio in Fitzroy, Melbourne. For over ten years I've partnered
                 with founders and cultural institutions across Australia to bring
                 clarity to complex stories through thoughtful art direction.

@@ -5,17 +5,17 @@ import type { Project } from "@/lib/projects";
 export const Route = createFileRoute("/projects/")({
   head: () => ({
     meta: [
-      { title: "Projects — Archer & Co." },
+      { title: "Projects — Damian Calello" },
       {
         name: "description",
         content:
-          "Selected portfolio of branding, logo design, packaging, and website design projects by Archer & Co., a senior graphic designer in Melbourne.",
+          "Selected portfolio of branding, logo design, packaging, and website design projects by Damian Calello, a senior graphic designer in Melbourne.",
       },
-      { property: "og:title", content: "Projects — Archer & Co." },
+      { property: "og:title", content: "Projects — Damian Calello" },
       {
         property: "og:description",
         content:
-          "Selected portfolio of branding, logo design, packaging, and website design projects by Archer & Co.",
+          "Selected portfolio of branding, logo design, packaging, and website design projects by Damian Calello",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

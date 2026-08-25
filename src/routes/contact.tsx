@@ -4,17 +4,17 @@ import { useState } from "react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Archer & Co." },
+      { title: "Contact — Damian Calello" },
       {
         name: "description",
         content:
-          "Start a project with Archer & Co. — a senior graphic designer in Melbourne available for branding, logo design, packaging, and website design commissions.",
+          "Start a project with Damian Calello — a senior graphic designer in Melbourne available for branding, logo design, packaging, and website design commissions.",
       },
-      { property: "og:title", content: "Contact — Archer & Co." },
+      { property: "og:title", content: "Contact — Damian Calello" },
       {
         property: "og:description",
         content:
-          "Start a project with Archer & Co. — branding, logo design, packaging, and website design commissions.",
+          "Start a project with Damian Calello — branding, logo design, packaging, and website design commissions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -55,10 +55,10 @@ function ContactPage() {
                   Email
                 </p>
                 <a
-                  href="mailto:hello@archer.co"
+                  href="mailto:hello@damiancalello.com"
                   className="mt-1 block font-sans text-lg text-foreground transition-colors hover:text-accent"
                 >
-                  hello@archer.co
+                  hello@damiancalello.com
                 </a>
               </div>
               <div>

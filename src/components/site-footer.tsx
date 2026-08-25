@@ -7,10 +7,10 @@ export function SiteFooter() {
             New Business
           </span>
           <a
-            href="mailto:hello@archer.co"
+            href="mailto:hello@damiancalello.com"
             className="mt-3 block font-sans text-2xl font-light text-foreground transition-colors hover:text-accent"
           >
-            hello@archer.co
+            hello@damiancalello.com
           </a>
           <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
             Fitzroy, Melbourne VIC
@@ -45,7 +45,7 @@ export function SiteFooter() {
             </a>
           </div>
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground/60">
-            © {new Date().getFullYear()} Archer & Co. — Melbourne, AU
+            © {new Date().getFullYear()} Damian Calello — Melbourne, AU
           </p>
         </div>
       </div>

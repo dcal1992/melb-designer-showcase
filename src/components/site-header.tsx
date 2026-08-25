@@ -25,7 +25,7 @@ export function SiteHeader() {
           to="/"
           className="font-mono text-[11px] uppercase tracking-[0.2em] text-foreground transition-colors hover:text-accent"
         >
-          Archer <span className="text-accent">&</span> Co.
+          Damian <span className="text-accent">Calello</span>
         </Link>
 
         <nav className="hidden items-center gap-8 sm:flex">
