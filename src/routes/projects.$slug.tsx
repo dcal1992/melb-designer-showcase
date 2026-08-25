@@ -7,19 +7,19 @@ export const Route = createFileRoute("/projects/$slug")({
     if (!project) {
       return {
         meta: [
-          { title: "Project not found — Archer & Co." },
+          { title: "Project not found — Damian Calello." },
           { name: "robots", content: "noindex" },
         ],
       };
     }
     return {
       meta: [
-        { title: `${project.title} — Archer & Co.` },
+        { title: `${project.title} — Damian Calello.` },
         {
           name: "description",
           content: project.summary,
         },
-        { property: "og:title", content: `${project.title} — Archer & Co.` },
+        { property: "og:title", content: `${project.title} — Damian Calello.` },
         { property: "og:description", content: project.summary },
         { property: "og:type", content: "website" },
         { property: "og:image", content: project.cover },

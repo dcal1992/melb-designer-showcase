@@ -4,13 +4,13 @@ import { projects } from "@/lib/projects";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Archer & Co. — Senior Graphic Designer, Melbourne" },
+      { title: "Damian Calello. — Senior Graphic Designer, Melbourne" },
       {
         name: "description",
         content:
           "Senior graphic designer in Melbourne creating quietly impactful visual systems — branding, logo design, packaging, and website design.",
       },
-      { property: "og:title", content: "Archer & Co. — Senior Graphic Designer, Melbourne" },
+      { property: "og:title", content: "Damian Calello. — Senior Graphic Designer, Melbourne" },
       {
         property: "og:description",
         content:
@@ -115,7 +115,7 @@ function Index() {
               to="/about"
               className="mt-10 inline-block font-mono text-[11px] uppercase tracking-[0.18em] text-foreground underline decoration-accent/40 underline-offset-[6px] transition-colors hover:decoration-accent"
             >
-              More about Archer →
+              More about Damian Calello →
             </Link>
           </div>
         </div>
