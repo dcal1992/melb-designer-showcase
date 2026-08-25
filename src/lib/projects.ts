@@ -1,15 +1,40 @@
 import solitudeGallery from "@/assets/projects/solitude-gallery.jpg";
 import solitudeGalleryDetail from "@/assets/projects/solitude-gallery-detail.jpg";
+import solitudeGallery2 from "@/assets/projects/solitude-gallery-2.jpg";
+import solitudeGallery3 from "@/assets/projects/solitude-gallery-3.jpg";
+import solitudeGallery4 from "@/assets/projects/solitude-gallery-4.jpg";
 import aeonSkincare from "@/assets/projects/aeon-skincare.jpg";
 import aeonSkincareDetail from "@/assets/projects/aeon-skincare-detail.jpg";
+import aeonSkincare2 from "@/assets/projects/aeon-skincare-2.jpg";
+import aeonSkincare3 from "@/assets/projects/aeon-skincare-3.jpg";
+import aeonSkincare4 from "@/assets/projects/aeon-skincare-4.jpg";
 import meridianCoffee from "@/assets/projects/meridian-coffee.jpg";
 import meridianCoffeeDetail from "@/assets/projects/meridian-coffee-detail.jpg";
+import meridianCoffee2 from "@/assets/projects/meridian-coffee-2.jpg";
+import meridianCoffee3 from "@/assets/projects/meridian-coffee-3.jpg";
+import meridianCoffee4 from "@/assets/projects/meridian-coffee-4.jpg";
 import northlineJournal from "@/assets/projects/northline-journal.jpg";
 import northlineJournalDetail from "@/assets/projects/northline-journal-detail.jpg";
+import northlineJournal2 from "@/assets/projects/northline-journal-2.jpg";
+import northlineJournal3 from "@/assets/projects/northline-journal-3.jpg";
+import northlineJournal4 from "@/assets/projects/northline-journal-4.jpg";
 import cobaltStudio from "@/assets/projects/cobalt-studio.jpg";
 import cobaltStudioDetail from "@/assets/projects/cobalt-studio-detail.jpg";
+import cobaltStudio2 from "@/assets/projects/cobalt-studio-2.jpg";
+import cobaltStudio3 from "@/assets/projects/cobalt-studio-3.jpg";
+import cobaltStudio4 from "@/assets/projects/cobalt-studio-4.jpg";
 import formaBiennale from "@/assets/projects/forma-biennale.jpg";
 import formaBiennaleDetail from "@/assets/projects/forma-biennale-detail.jpg";
+import formaBiennale2 from "@/assets/projects/forma-biennale-2.jpg";
+import formaBiennale3 from "@/assets/projects/forma-biennale-3.jpg";
+import formaBiennale4 from "@/assets/projects/forma-biennale-4.jpg";
+
+export type GalleryImage = {
+  src: string;
+  width: number;
+  height: number;
+  caption: string;
+};
 
 export type Project = {
   slug: string;
@@ -25,6 +50,7 @@ export type Project = {
   coverWidth: number;
   coverHeight: number;
   detail: string;
+  gallery: GalleryImage[];
 };
 
 export const projects: Project[] = [
@@ -44,6 +70,32 @@ export const projects: Project[] = [
     coverWidth: 1024,
     coverHeight: 1280,
     detail: solitudeGalleryDetail,
+    gallery: [
+      {
+        src: solitudeGalleryDetail,
+        width: 1024,
+        height: 1024,
+        caption: "Identity detail — mark and margin study",
+      },
+      {
+        src: solitudeGallery2,
+        width: 1200,
+        height: 900,
+        caption: "Exhibition catalogue spread",
+      },
+      {
+        src: solitudeGallery3,
+        width: 900,
+        height: 1100,
+        caption: "Gallery wayfinding, level one",
+      },
+      {
+        src: solitudeGallery4,
+        width: 1200,
+        height: 900,
+        caption: "Stationery and collateral set",
+      },
+    ],
   },
   {
     slug: "aeon-skincare",
@@ -61,6 +113,32 @@ export const projects: Project[] = [
     coverWidth: 1024,
     coverHeight: 1280,
     detail: aeonSkincareDetail,
+    gallery: [
+      {
+        src: aeonSkincareDetail,
+        width: 1024,
+        height: 1024,
+        caption: "Primary packaging study",
+      },
+      {
+        src: aeonSkincare2,
+        width: 1200,
+        height: 900,
+        caption: "Full product range line-up",
+      },
+      {
+        src: aeonSkincare3,
+        width: 900,
+        height: 1100,
+        caption: "Label typography, macro detail",
+      },
+      {
+        src: aeonSkincare4,
+        width: 1200,
+        height: 900,
+        caption: "Secondary packaging and unboxing",
+      },
+    ],
   },
   {
     slug: "meridian-coffee",
@@ -78,6 +156,32 @@ export const projects: Project[] = [
     coverWidth: 1024,
     coverHeight: 1280,
     detail: meridianCoffeeDetail,
+    gallery: [
+      {
+        src: meridianCoffeeDetail,
+        width: 1024,
+        height: 1024,
+        caption: "Single-origin label system",
+      },
+      {
+        src: meridianCoffee2,
+        width: 1200,
+        height: 900,
+        caption: "Retail range across five origins",
+      },
+      {
+        src: meridianCoffee3,
+        width: 900,
+        height: 1100,
+        caption: "Label grid, printed detail",
+      },
+      {
+        src: meridianCoffee4,
+        width: 1200,
+        height: 900,
+        caption: "In-store menu and signage",
+      },
+    ],
   },
   {
     slug: "northline-journal",
@@ -95,6 +199,32 @@ export const projects: Project[] = [
     coverWidth: 1280,
     coverHeight: 1024,
     detail: northlineJournalDetail,
+    gallery: [
+      {
+        src: northlineJournalDetail,
+        width: 1024,
+        height: 1024,
+        caption: "Article template, art-directed spread",
+      },
+      {
+        src: northlineJournal2,
+        width: 1200,
+        height: 900,
+        caption: "Home index on desktop",
+      },
+      {
+        src: northlineJournal3,
+        width: 900,
+        height: 1100,
+        caption: "Mobile reading experience",
+      },
+      {
+        src: northlineJournal4,
+        width: 1200,
+        height: 900,
+        caption: "Typographic style guide",
+      },
+    ],
   },
   {
     slug: "cobalt-studio",
@@ -112,6 +242,32 @@ export const projects: Project[] = [
     coverWidth: 1280,
     coverHeight: 1024,
     detail: cobaltStudioDetail,
+    gallery: [
+      {
+        src: cobaltStudioDetail,
+        width: 1024,
+        height: 1024,
+        caption: "Mark construction detail",
+      },
+      {
+        src: cobaltStudio2,
+        width: 1200,
+        height: 900,
+        caption: "Geometric grid sheet",
+      },
+      {
+        src: cobaltStudio3,
+        width: 900,
+        height: 1100,
+        caption: "Blind-embossed business card",
+      },
+      {
+        src: cobaltStudio4,
+        width: 1200,
+        height: 900,
+        caption: "Studio wall signage at scale",
+      },
+    ],
   },
   {
     slug: "forma-biennale",
@@ -129,6 +285,32 @@ export const projects: Project[] = [
     coverWidth: 1280,
     coverHeight: 1024,
     detail: formaBiennaleDetail,
+    gallery: [
+      {
+        src: formaBiennaleDetail,
+        width: 1024,
+        height: 1024,
+        caption: "Display type specimen",
+      },
+      {
+        src: formaBiennale2,
+        width: 1200,
+        height: 900,
+        caption: "Poster series, exterior site",
+      },
+      {
+        src: formaBiennale3,
+        width: 900,
+        height: 1100,
+        caption: "Wayfinding totem, main hall",
+      },
+      {
+        src: formaBiennale4,
+        width: 1200,
+        height: 900,
+        caption: "Programme and catalogue",
+      },
+    ],
   },
 ];
 
